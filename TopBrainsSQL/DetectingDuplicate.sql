@@ -1,0 +1,4 @@
+SELECT Email, COUNT(*) AS Count
+FROM Users
+GROUP BY Email
+HAVING COUNT(*) > 1;
